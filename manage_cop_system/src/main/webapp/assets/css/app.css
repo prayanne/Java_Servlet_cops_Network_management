@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body { font-family: Arial, sans-serif; margin: 18px; }
+
+a { text-decoration: none; }
+
+.container { 
+	max-width: 
+	1080px; margin: 
+	0 auto;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: 12px;
+}
+
+.card { 
+	border: 1px solid #ddd; 
+	border-radius: 10px; 
+	padding: 14px; 
+	background: #fff;
+}
+
+.card .title { 
+	font-size: 18px; 
+	font-weight: 700; 
+	margin-bottom: 6px; 
+}
+
+.badge { 
+	display: inline-block; 
+	padding: 2px 8px; 
+	border-radius: 999px; 
+	border: 1px solid #ddd; 
+	margin-right: 6px; 
+	font-size: 12px;
+}
+
+.tabs { 
+	display: flex; 
+	gap: 8px; 
+	margin: 12px 0;
+}
+
+.tab { 
+	padding: 8px 10px; 
+	border: 1px solid #ddd; 
+	border-radius: 8px;
+}
+
+.tab.active { font-weight: 700; }
+
+.tree-row { 
+	border-bottom: 1px dashed #eee; 
+	padding: 8px 0;
+}
+
+.mono { 
+	font-family: 
+		ui-monospace, 
+		SFMono-Regular, 
+		Menlo, 
+		Monaco, 
+		Consolas, 
+		"Liberation Mono", 
+		monospace; 
+}
+
+textarea { width: 100%; min-height: 180px; }
+
+input[type="text"], input[type="date"] { width: 100%; padding: 8px; }
+
+.form-row { margin: 10px 0; }
+
+.btn { 
+	display: inline-block; 
+	padding: 8px 12px; 
+	border: 1px solid #ddd; 
+	border-radius: 8px;
+}
