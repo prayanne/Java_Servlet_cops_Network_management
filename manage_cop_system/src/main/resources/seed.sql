@@ -1,0 +1,10 @@
+INSERT INTO WORKPLACE(name, icon_key, location, summary) VALUES ('HQ 서울', 'office', 'Seoul', '본사 네트워크'); INSERT INTO WORKPLACE(name, icon_key, location, summary) VALUES ('공장 A', 'factory', 'Incheon', '생산라인/IoT');
+INSERT INTO NETWORK_NODE(workplace_id, parent_id, node_type, display_name, sort_order) VALUES (1, NULL, 'ISP', 'KT ISP', 1);
+INSERT INTO NETWORK_NODE(workplace_id, parent_id, node_type, display_name, sort_order) VALUES (1, 1, 'MODEM', 'KT Modem', 1);
+INSERT INTO NETWORK_NODE(workplace_id, parent_id, node_type, display_name, sort_order) VALUES (1, 2, 'HASH', 'NET-7f3a2c', 1);
+INSERT INTO NETWORK_NODE(workplace_id, parent_id, node_type, display_name, sort_order) VALUES (1, 3, 'ROUTER', 'EdgeRouter-01', 1);
+INSERT INTO NETWORK_NODE(workplace_id, parent_id, node_type, display_name, sort_order) VALUES (1, 4, 'ORG', 'IT팀', 1);
+INSERT INTO NETWORK_NODE(workplace_id, parent_id, node_type, display_name, sort_order) VALUES (1, 5, 'DEVICE', 'CoreSwitch-01', 1);
+INSERT INTO NETWORK_NODE(workplace_id, parent_id, node_type, display_name, sort_order) VALUES (1, 5, 'DEVICE', 'AP-Office-03', 2);
+INSERT INTO ACTIVITY_LOG(node_id, title, content) VALUES (6, 'VLAN 정리', 'VLAN 10/20 분리 및 트렁크 확인'); INSERT INTO ACTIVITY_LOG(node_id, title, content) VALUES (7, 'AP 채널 변경', '2.4GHz 채널 간섭 완화');
+INSERT INTO REPORT(workplace_id, report_date, title, content, author, tags_csv) VALUES (1, DATE '2025-12-10', '외부망 점검', 'ISP->모뎀->라우터 구간 링크/에러 확인 완료', 'admin', 'network,isp'); INSERT INTO REPORT(workplace_id, report_date, title, content, author, tags_csv) VALUES (1, NULL, '비정기 보고', '특이사항 없음(임시 보고서)', 'admin', 'adhoc');
